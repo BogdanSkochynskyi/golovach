@@ -1,4 +1,4 @@
-package net.golovach.udemy.traits.stackable
+package net.golovach.udemy.programmingInScala.traits.stackable
 
 abstract class IntQueue {
   def get(): Int

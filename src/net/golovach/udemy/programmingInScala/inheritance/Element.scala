@@ -1,4 +1,4 @@
-package net.golovach.udemy.inheritance
+package net.golovach.udemy.programmingInScala.inheritance
 
 import Element.elem
 

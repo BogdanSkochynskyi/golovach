@@ -1,4 +1,4 @@
-package net.golovach.udemy.traits.rectangle
+package net.golovach.udemy.programmingInScala.traits.rectangle
 
 object Demo {
   def main(args: Array[String]) {

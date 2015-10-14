@@ -1,4 +1,4 @@
-package net.golovach.udemy.traits
+package net.golovach.udemy.programmingInScala.traits
 
 trait Philosophical {
   def philosophize(): Unit ={

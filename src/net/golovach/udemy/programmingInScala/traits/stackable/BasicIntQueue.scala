@@ -1,4 +1,4 @@
-package net.golovach.udemy.traits.stackable
+package net.golovach.udemy.programmingInScala.traits.stackable
 
 import scala.collection.mutable.ArrayBuffer
 

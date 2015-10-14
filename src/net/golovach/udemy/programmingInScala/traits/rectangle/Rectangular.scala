@@ -1,4 +1,4 @@
-package net.golovach.udemy.traits.rectangle
+package net.golovach.udemy.programmingInScala.traits.rectangle
 
 trait Rectangular {
   def topLeft: Point

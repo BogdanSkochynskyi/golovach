@@ -1,4 +1,4 @@
-package net.golovach.udemy.rational
+package net.golovach.udemy.programmingInScala.rational
 
 /**
  * 1/3+1/2 = 2/6+3/6
