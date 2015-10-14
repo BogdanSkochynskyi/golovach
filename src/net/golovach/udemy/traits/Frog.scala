@@ -1,7 +1,8 @@
 package net.golovach.udemy.traits
 
 class Animal
-class Frog extends Animal with Philosophical{
+trait HasLegs
+class Frog extends Animal with Philosophical with HasLegs{
 
   override def toString = "green"
 
