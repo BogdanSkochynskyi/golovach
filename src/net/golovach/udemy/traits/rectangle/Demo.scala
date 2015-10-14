@@ -1,4 +1,4 @@
-package net.golovach.udemy.traits
+package net.golovach.udemy.traits.rectangle
 
 object Demo {
   def main(args: Array[String]) {

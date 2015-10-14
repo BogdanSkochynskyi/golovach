@@ -1,3 +1,3 @@
-package net.golovach.udemy.traits
+package net.golovach.udemy.traits.rectangle
 
 abstract class Component extends Rectangular
