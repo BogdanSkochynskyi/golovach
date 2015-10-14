@@ -9,7 +9,7 @@ package net.golovach.udemy.rational
  * @param d - denominator
  */
 
-class Rational (n: Int, d: Int){
+class Rational (n: Int, d: Int) extends Ordered[Rational]{
 
   def this(n: Int) = this(n, 1) //auxiliary constructor
 
@@ -56,13 +56,13 @@ class Rational (n: Int, d: Int){
   private def gcd(a: Int, b: Int): Int =
     if (b==0) a else gcd(b, a % b)
 
-  def < (that: Rational) =
+  /*def < (that: Rational) =
     this.numer * that.denom > that.numer*this.denom
-
   def > (that: Rational) = that < this
   def <= (that: Rational) = (that < this) || (this == that)
-  def >= (that: Rational) = (that > this) || (this == that)
-
+  def >= (that: Rational) = (that > this) || (this == that)*/
+  override def compare(that: Rational): Int =
+    (this.numer * that.denom) - (that.numer*this.denom)
 }
 
 object Demo{
