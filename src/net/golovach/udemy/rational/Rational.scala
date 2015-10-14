@@ -55,11 +55,19 @@ class Rational (n: Int, d: Int){
 
   private def gcd(a: Int, b: Int): Int =
     if (b==0) a else gcd(b, a % b)
+
+  def < (that: Rational) =
+    this.numer * that.denom > that.numer*this.denom
+
+  def > (that: Rational) = that < this
+  def <= (that: Rational) = (that < this) || (this == that)
+  def >= (that: Rational) = (that > this) || (this == that)
+
 }
 
 object Demo{
   def main (args: Array[String]) {
-    implicit def intToRational(x: Int) = new Rational(x)
+    implicit def intToRational(x: Int): Rational = new Rational(x)
     val a = new Rational(1,2)
     val b = new Rational(2,3)
     val c = 2 + b
